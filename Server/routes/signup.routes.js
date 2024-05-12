@@ -54,7 +54,7 @@ router.post("/", async (req, res) => {
     });
   }
 
-  // Email validation regex
+  // Password validation regex
   const passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
   // Validate password format

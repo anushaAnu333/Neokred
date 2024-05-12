@@ -39,7 +39,7 @@ const Text = styled(Typography)(({ theme }) => ({
 }));
 export default function Login() {
   const response = useSelector((store) => store.auth.signIn);
-  console.log("response", response);
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

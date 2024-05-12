@@ -45,7 +45,7 @@ const ImgBox = styled(Stack)(({ theme }) => ({
 
 export default function SignUp() {
   const response = useSelector((store) => store.auth.signUp);
-  console.log("response", response);
+ 
   const dispatch = useDispatch();
 
   //Email
@@ -398,7 +398,7 @@ export default function SignUp() {
           securityQuestion: "What is your School name ?",
           securityAnswer: securityAnswer,
         };
-        console.log("dataaa", user);
+       
         dispatch(postAuth(user));
       }
     }

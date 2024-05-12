@@ -33,7 +33,6 @@ router.post("/", async (req, res) => {
 
   try {
     const user = await userModel.findOne({ email });
-    console.log("user", user);
     if (user) {
       const passwordMatch = await bcrypt.compare(password, user.password);
 
@@ -47,7 +46,7 @@ router.post("/", async (req, res) => {
           role: user.role,
           userId: user._id,
           refreshToken: refreshToken,
-          username:user.name
+          username: user.name,
         });
       } else {
         res.json({ message: "Incorrect password" });
