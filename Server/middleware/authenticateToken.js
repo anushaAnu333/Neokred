@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 // Function to generate access token
 const generateAccessToken = (user) => {
-  return jwt.sign({ userId: user._id }, "123", { expiresIn: "1m" });
+  return jwt.sign({ userId: user._id }, "123", { expiresIn: "5m" });
 };
 
 const tokenBlacklist = new Set();
