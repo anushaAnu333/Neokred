@@ -38,7 +38,6 @@ The frontend design is implemented using **Material UI** and state management wi
    ```
    cd Server
    npm install
-   PORT=7777
    ```
 
 
